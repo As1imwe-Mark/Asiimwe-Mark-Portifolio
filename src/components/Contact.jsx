@@ -36,7 +36,7 @@ const Contact = () => {
 
               {/* Social Icons Section */}
               <div className="flex items-center mt-8 space-x-4 text-gray-400 text-2xl">
-                <a href="https://www.linkedin.com/in/asiimwe-mark" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/mark-asiimwe-0ab0611ab/" target="_blank" rel="noreferrer">
                   <AiFillLinkedin className="hover:text-white transition duration-300" />
                 </a>
                 <a href="https://github.com/As1imwe-Mark" target="_blank" rel="noreferrer">

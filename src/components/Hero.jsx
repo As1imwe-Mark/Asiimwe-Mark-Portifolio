@@ -1,4 +1,4 @@
-import profile from '../assets/profile.png'
+import profile from '../assets/Profile.png'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle, AiFillInstagram } from 'react-icons/ai'
 import {TypeAnimation} from 'react-type-animation'
 
@@ -20,7 +20,7 @@ const Hero = () => {
             1000,
             "Data Entrant",
             1000,
-            "Maths Teacher",
+            "Maths Tutor",
             1000,
           ]}
           wrapper='span'
@@ -54,7 +54,7 @@ const Hero = () => {
 
 
       <div className='my-auto'>
-        <img className='w-[220px] sm:w-[420px] mx-auto h-auto rounded-full' src={profile} alt='profile pic' />
+        <img className='w-[300px] sm:w-[450px] mx-auto h-auto rounded-full' src={profile} alt='profile pic' />
       </div>
 
       </div>

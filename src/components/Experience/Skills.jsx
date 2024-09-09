@@ -12,17 +12,15 @@ const SkillsAndExperience = () => {
         
         {/* Skills Section */}
         <div className="w-full lg:w-1/2">
-          <motion.div className="flex flex-wrap justify-center lg:justify-start items-start">
+          <div className="flex flex-wrap justify-center lg:justify-start items-start">
             {skills.map((skill) => (
-              <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
+              <div
                 className="m-4 flex flex-col items-center"
                 key={skill.name}
               >
                 <div
-                  className="flex items-center justify-center w-20 h-20 md:w-16 md:h-16 rounded-full"
-                  style={{ backgroundColor: skill.bgColor }}
+                  className="flex items-center justify-center w-20 h-20 md:w-16 md:h-16 rounded-full bg-slate-100"
+          
                 >
                   <img
                     src={skill.icon}
@@ -33,9 +31,9 @@ const SkillsAndExperience = () => {
                 <p className="mt-2 text-sm font-medium text-white">
                   {skill.name}
                 </p>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
 
         {/* Experience Section */}
