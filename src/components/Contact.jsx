@@ -5,10 +5,10 @@ import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter, AiFillFacebook, AiFillI
 
 const Contact = () => {
   return (
-    <div id="contact" className="flex justify-center my-5 h-full sm:h-[70vh] items-center">
+    <div id="contact" className="flex justify-center  my-5 h-full sm:h-[70vh] items-center">
       <div className="max-w-[1200px] mx-auto">
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             {/* Contact Details Section */}
             <div className="p-6 bg-gray-800 rounded-xl flex flex-col justify-around">
@@ -62,15 +62,15 @@ const Contact = () => {
             </div>
 
             {/* Contact Form Section */}
-            <form method="post" action="" className="flex p-6 flex-col justify-center max-[700px]">
+            <form action="" method="post"  className="flex  flex-col justify-center ">
               <div className="flex flex-col ">
-                <input type="name" name="name" id="name" placeholder="Full Name" className="w-[100%] mt-2 p-3 rounded-lg bg-gray-800 border-gray-700 text-white outline-none " />
+                <input type="name" name="name" id="name" placeholder="Full Name" className="w-full mt-2 py-3 px-4 rounded-lg bg-gray-800 border-gray-700 text-white outline-none " />
               </div>
               <div className="flex flex-col mt-2">
-                <input type="email" name="email" id="email" placeholder="Email" className="w-[100%] mt-2 py-3 px-3 rounded-lg bg-gray-800 border-gray-700 text-white outline-none " />
+                <input type="email" name="email" id="email" placeholder="Email" className="w-full mt-2 py-3 px-4 rounded-lg bg-gray-800 border-gray-700 text-white outline-none " />
               </div>
               <div className="flex flex-col mt-2">
-                <textarea name="message" id="message" placeholder="Your Message" className="w-[100%] mt-2 py-3 px-3 rounded-lg bg-gray-800 border-gray-700 text-white outline-none " />
+                <textarea name="message" id="message" placeholder="Your Message" className="w-full mt-2 py-3 px-4 rounded-lg bg-gray-800 border-gray-700 text-white outline-none " />
               </div>
               <button type="submit" className="md:w-32 bg-primary-color text-white py-3 px-6 rounded-lg mt-3">
                 Submit

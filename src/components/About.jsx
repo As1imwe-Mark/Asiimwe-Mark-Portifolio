@@ -24,7 +24,7 @@ const About = () => {
                 About <span>Me</span>
               </h3>
               <p className="text-justify leading-7 w-full sm:w-11/12 mx-auto">
-                Hello there! I'm Asiimwe Mark, a passionate web developer with a knack for translating creative design concepts into seamless user experiences. My unique blend of design thinking and coding prowess empowers me to craft intuitive interfaces that leave lasting impressions. I thrive in collaborative environments and am eager to contribute my skills to companies that value innovation, user-centered design, and cutting-edge technologies. If you're seeking someone who can bring fresh ideas to the forefront of your projects, let's connect!
+                Hello there! I&apos;m Asiimwe Mark, a passionate web developer with a knack for translating creative design concepts into seamless user experiences. My unique blend of design thinking and coding prowess empowers me to craft intuitive interfaces that leave lasting impressions. I thrive in collaborative environments and am eager to contribute my skills to companies that value innovation, user-centered design, and cutting-edge technologies. If you&apos;re seeking someone who can bring fresh ideas to the forefront of your projects, let&apos;s connect!
               </p>
             </div>
           </div>

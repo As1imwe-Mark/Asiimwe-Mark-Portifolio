@@ -1,24 +1,7 @@
-import React, { useState } from 'react';
-import about1 from '../assets/about01.png';
-import about2 from '../assets/about02.png';
-import about3 from '../assets/about03.png';
-import about4 from '../assets/about04.png';
-import about5 from '../assets/about04.png';
-import about6 from '../assets/about04.png';
+import { useState } from 'react';
+import { projects } from './constants/projects';
 import { AiFillGithub, AiFillChrome } from 'react-icons/ai';
 
-const projects = [
-  { img: about1, title: "Project #1", desc: "Description of project #1" },
-  { img: about2, title: "Project #2", desc: "Description of project #2" },
-  { img: about3, title: "Project #3", desc: "Description of project #3" },
-  { img: about4, title: "Project #4", desc: "Description of project #4" },
-  { img: about5, title: "Project #5", desc: "Description of project #5" },
-  { img: about6, title: "Project #6", desc: "Description of project #6" },
-  { img: about1, title: "Project #7", desc: "Description of project #7" },
-  { img: about2, title: "Project #8", desc: "Description of project #8" },
-  { img: about3, title: "Project #9", desc: "Description of project #9" },
-  { img: about4, title: "Project #10", desc: "Description of project #10" },
-];
 
 const Work = () => {
   // Number of visible projects
@@ -59,10 +42,10 @@ const Work = () => {
               <p className='text-gray-400'>{project.desc}</p>
             </div>
             <div className='flex flex-row gap-3 justify-end text-white mb-3 mr-3'>
-              <a className='cursor-pointer' href='#'>
+              <a className='cursor-pointer' href={project.github}>
                 <AiFillGithub className='w-[30px] h-auto' />
               </a>
-              <a className='cursor-pointer' href='#'>
+              <a className='cursor-pointer' href={project.live}>
                 <AiFillChrome className='w-[30px] h-auto' />
               </a>
             </div>

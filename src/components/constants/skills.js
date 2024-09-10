@@ -17,4 +17,4 @@ export const skills = [
   {icon:react,name:'react'}, 
   {icon:redux,name:'redux'}, 
   {icon:node,name:'node'},
-  {icon:email,name:'email'}]
+  {icon:email,name:'TailwindCss'}]
