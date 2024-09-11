@@ -1,4 +1,4 @@
-import profile from '../assets/Profile.png'
+import profile from '../assets/profile.png'
 import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle, AiFillInstagram } from 'react-icons/ai'
 import {TypeAnimation} from 'react-type-animation'
 
