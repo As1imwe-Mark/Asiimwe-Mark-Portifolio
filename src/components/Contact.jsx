@@ -56,7 +56,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form Section */}
-            <form action="" method="post"  className="flex  flex-col justify-center ">
+            <form action="https://formspree.io/f/xgebjyrj" method="POST"  className="flex  flex-col justify-center ">
               <div className="flex flex-col ">
                 <input type="name" name="name" id="name" placeholder="Full Name" className="w-full mt-2 py-3 px-4 rounded-lg bg-gray-800 border-gray-700 text-white outline-none " />
               </div>
