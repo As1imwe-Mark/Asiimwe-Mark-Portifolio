@@ -1,19 +1,18 @@
-import about1 from '../../assets/about01.png';
-import about2 from '../../assets/about02.png';
-import about3 from '../../assets/about03.png';
-import about4 from '../../assets/about04.png';
-import about5 from '../../assets/about04.png';
-import about6 from '../../assets/about04.png';
+import linkwarden from '../../assets/Linkwarden Twitter.png';
+import livingSeed from '../../assets/LivingSeedAcademy.png';
+import todoapp from '../../assets/todoapp.png';
+import math from '../../assets/math Magician.png';
+import Faqs from '../../assets/Faqs.png';
+import awesome from '../../assets/Awesome books.png';
+import webcamp from '../../assets/webcapstone.png';
 
 export const projects = [
-  { img: about1, title: "Project #1", desc: "Description of project #1", github:"",live:"" },
-  { img: about2, title: "Project #2", desc: "Description of project #2", github:"",live:""  },
-  { img: about3, title: "Project #3", desc: "Description of project #3", github:"",live:""  },
-  { img: about4, title: "Project #4", desc: "Description of project #4", github:"",live:""  },
-  { img: about5, title: "Project #5", desc: "Description of project #5", github:"",live:""  },
-  { img: about6, title: "Project #6", desc: "Description of project #6", github:"",live:""  },
-  { img: about1, title: "Project #7", desc: "Description of project #7", github:"",live:""  },
-  { img: about2, title: "Project #8", desc: "Description of project #8", github:"",live:""  },
-  { img: about3, title: "Project #9", desc: "Description of project #9", github:"",live:""  },
-  { img: about4, title: "Project #10", desc: "Description of project #10", github:"",live:"" },
+  { img: linkwarden, title: "LinkWarden", desc: "Description of project #1", github:"https://github.com/As1imwe-Mark/test-app",live:"https://linkwardenapp.netlify.app/" },
+  { img: livingSeed , title: "Living Seed Academy", desc: "Living Seed Academy", github:"https://github.com/As1imwe-Mark/Living_Seed-Academy",live:"https://livingseedacademy.netlify.app" },
+  { img: Faqs, title: "FAQs", desc: "Description of project #3", github:"https://github.com/As1imwe-Mark/FAQs",live:"https://markfaq.netlify.app/"  },
+  { img: todoapp, title: "TodoList App", desc: "Description of project #4", github:"https://github.com/As1imwe-Mark/TodoApp",live:"https://marktodoapp.netlify.app/"  },
+  { img: math, title: "Project #5", desc: "Description of project #5", github:"https://github.com/As1imwe-Mark/math_magician",live:"https://mathmagician75.netlify.app/"  },
+  { img: awesome, title: "Awesome Books App", desc: "Description of project #6", github:"https://github.com/As1imwe-Mark/Awesome-books-app",live:"https://markawesomebooks.netlify.app/"  },
+  { img: webcamp, title: "Web Camp Capstone", desc: "Description of project #7", github:"https://github.com/As1imwe-Mark/Web-Camp-Capstone-project",live:"https://markwebcamp.netlify.app/"  }
+  
 ];

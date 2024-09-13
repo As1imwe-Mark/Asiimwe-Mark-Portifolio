@@ -1,7 +1,7 @@
 import email from '../assets/email.png'
 import mobile from '../assets/mobile.png'
 
-import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter, AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub, AiOutlineTwitter } from 'react-icons/ai';
 
 const Contact = () => {
   return (
@@ -42,14 +42,8 @@ const Contact = () => {
                 <a href="https://github.com/As1imwe-Mark" target="_blank" rel="noreferrer">
                   <AiFillGithub className="hover:text-white transition duration-300" />
                 </a>
-                <a href="https://twitter.com/asiimwe-mark" target="_blank" rel="noreferrer">
+                <a href="https://twitter.com/MarkAsiimwe?t=fPfXM4CV3OU6gKMNB1RGDA&s=09" target="_blank" rel="noreferrer">
                   <AiOutlineTwitter className="hover:text-white transition duration-300" />
-                </a>
-                <a href="https://facebook.com/asiimwe-mark" target="_blank" rel="noreferrer">
-                  <AiFillFacebook className="hover:text-white transition duration-300" />
-                </a>
-                <a href="https://instagram.com/asiimwe-mark" target="_blank" rel="noreferrer">
-                  <AiFillInstagram className="hover:text-white transition duration-300" />
                 </a>
               </div>
 

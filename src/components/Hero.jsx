@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 import profile from '../assets/profile.png'
-import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle, AiFillInstagram } from 'react-icons/ai'
+import { AiFillLinkedin, AiFillGithub, AiFillTwitterCircle } from 'react-icons/ai'
 import {TypeAnimation} from 'react-type-animation'
 
 const Hero = () => { 
@@ -36,17 +37,24 @@ const Hero = () => {
         </div>
         
           <div className='text-5xl flex justify-start gap-6 my-7 text-purple-600'>
-            <AiFillLinkedin />
-            <AiFillGithub />
-            <AiFillTwitterCircle />
-            <AiFillInstagram />
+          
+                <a href="https://www.linkedin.com/in/mark-asiimwe-0ab0611ab/" target="_blank" rel="noreferrer">
+                  <AiFillLinkedin className="hover:text-white transition duration-300" />
+                </a>
+                <a href="https://github.com/As1imwe-Mark" target="_blank" rel="noreferrer">
+                  <AiFillGithub className="hover:text-white transition duration-300" />
+                </a>
+                <a href="https://twitter.com/MarkAsiimwe?t=fPfXM4CV3OU6gKMNB1RGDA&s=09" target="_blank" rel="noreferrer">
+                  <AiFillTwitterCircle className="hover:text-white transition duration-300" />
+                </a>
+        
           </div>
 
           <div className='relative inline-flex group my-3'>
 
           <div className='absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200'></div>
 
-          <a href='Download Cv' role='button' className='w-[190px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900'>Download Cv</a>
+          <a href='../resume/resume.pdf' download='resume.pdf' role='button' className='w-[190px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900'>Download Cv</a>
 
           </div>
 

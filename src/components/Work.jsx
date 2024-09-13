@@ -42,10 +42,10 @@ const Work = () => {
               <p className='text-gray-400'>{project.desc}</p>
             </div>
             <div className='flex flex-row gap-3 justify-end text-white mb-3 mr-3'>
-              <a className='cursor-pointer' href={project.github}>
+              <a className='cursor-pointer' href={project.github} target="_blank" rel="noreferrer">
                 <AiFillGithub className='w-[30px] h-auto' />
               </a>
-              <a className='cursor-pointer' href={project.live}>
+              <a className='cursor-pointer' href={project.live} target="_blank" rel="noreferrer">
                 <AiFillChrome className='w-[30px] h-auto' />
               </a>
             </div>
