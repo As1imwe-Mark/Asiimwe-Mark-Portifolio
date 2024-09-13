@@ -6,13 +6,13 @@ import {TypeAnimation} from 'react-type-animation'
 const Hero = () => { 
   return (
     <div>
-      <div id='home' className='max-w-[1200px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center items-center'>
+      <div id='home' className='max-w-[1210px] h-auto mx-auto flex flex-col-reverse sm:flex-row justify-center items-center'>
 
       <div className='flex-col my-auto mx-auto'>
-        <p className='md:text-5xl sm:text-4xl text-xl font-bold text-gray-200'>
+        <p className='md:text-5xl sm:text-4xl text-lg font-bold text-gray-200'>
           Hi I&apos;m Asiimwe Mark
         </p>
-        <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
+        <h1 className='md:text-7xl sm:text-5xl text-3xl font-bold md:py-6'>
           <TypeAnimation 
           sequence={[
             "Frontend Dev",
