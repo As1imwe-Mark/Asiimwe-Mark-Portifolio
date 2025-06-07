@@ -1,57 +1,62 @@
-import about from '../assets/About.jpg';
+import aboutImage from '../assets/About.jpg'; // Renamed for clarity
 
 const About = () => {
   return (
-    <div id="about" className="py-10 text-white bg-[#232325] min-h-screen">
-      <div className="flex flex-col-reverse sm:flex-row items-center md:gap-6 gap-12 px-5 max-w-6xl mx-auto">
-        
-        {/* Image Section */}
-        <div className="w-full sm:w-1/2 flex justify-center">
-          <div className="w-full max-w-sm">
-            <img
-              src={about}
-              alt="about image"
-              className="object-cover bg-gray-700 rounded-xl h-auto w-full filter grayscale brightness-50"
-            />
+    <div id="about" className="py-20 text-white bg-[#232325]">
+      <div className="container mx-auto px-6 md:px-10">
+        <div className="grid md:grid-cols-5 gap-12 items-center">
+          
+          {/* Text Section - Takes up more space to prioritize the story */}
+          <div className="md:col-span-3">
+            <h2 className="text-4xl font-bold mb-5 relative inline-block">
+              About Me
+              {/* Simple underline accent */}
+              <span className="block w-1/2 h-1 bg-indigo-500 mt-2"></span>
+            </h2>
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              Hello! I&apos;m Asiimwe Mark, a front-end developer driven by a passion for building beautiful, intuitive, and highly functional web experiences. My journey into web development started with a fascination for how design and code work together to create magic on the screen. Today, I translate that fascination into reality by transforming complex ideas into seamless, user-centric interfaces.
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+              I thrive on challenges and am constantly exploring new technologies to push the boundaries of what's possible. My approach combines a keen eye for design with a deep understanding of modern development practices. I believe the best products are built in collaborative environments, and I'm eager to bring my skills in creative problem-solving and front-end development to a team that shares my passion for innovation and excellence.
+            </p>
+
+            {/* Stats Section - More integrated and descriptive */}
+            <div className="flex flex-col sm:flex-row gap-8 mt-10">
+              <div className="text-center">
+                <h3 className="text-4xl font-bold text-indigo-400">
+                  12<span className="text-indigo-300">+</span>
+                </h3>
+                <p className="text-gray-400 mt-1">Completed Projects</p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-4xl font-bold text-indigo-400">
+                  2<span className="text-indigo-300">+</span>
+                </h3>
+                <p className="text-gray-400 mt-1">Years of Experience</p>
+              </div>
+              <div className="text-center">
+                <h3 className="text-4xl font-bold text-indigo-400">
+                  12<span className="text-indigo-300">+</span>
+                </h3>
+                <p className="text-gray-400 mt-1">Happy Clients</p>
+              </div>
+            </div>
           </div>
+
+          {/* Image Section */}
+          <div className="md:col-span-2 flex justify-center md:justify-end">
+            <div className="w-full max-w-sm relative group">
+              <img
+                src={aboutImage}
+                alt="Asiimwe Mark"
+                className="object-cover rounded-xl w-full h-auto shadow-lg transition-transform duration-500 transform group-hover:scale-105"
+              />
+              {/* Optional: Add a subtle overlay for effect */}
+              <div className="absolute inset-0 bg-black opacity-10 rounded-xl"></div>
+            </div>
+          </div>
+
         </div>
-
-        {/* Text Section */}
-        <div className="w-full sm:w-1/2">
-          <div className="p-2">
-            <div className="text-gray-300 my-3">
-              <h3 className="text-4xl font-semibold mb-5">
-                About <span>Me</span>
-              </h3>
-              <p className="text-justify leading-7 w-full sm:w-11/12 mx-auto">
-                Hello there! I&apos;m Asiimwe Mark, a passionate web developer with a knack for translating creative design concepts into seamless user experiences. My unique blend of design thinking and coding prowess empowers me to craft intuitive interfaces that leave lasting impressions. I thrive in collaborative environments and am eager to contribute my skills to companies that value innovation, user-centered design, and cutting-edge technologies. If you&apos;re seeking someone who can bring fresh ideas to the forefront of your projects, let&apos;s connect!
-              </p>
-            </div>
-          </div>
-
-          {/* Stats Section */}
-          <div className="flex flex-wrap mt-10 items-center gap-5 justify-center sm:justify-start">
-            <div className="bg-[#333333]/40 p-5 rounded-lg text-center">
-              <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                12<span>+</span>
-              </h3>
-              <p className="md:text-base text-xs">Projects</p>
-            </div>
-            <div className="bg-[#333333]/40 p-5 rounded-lg text-center">
-              <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                2<span>+</span>
-              </h3>
-              <p className="md:text-base text-xs">years experience</p>
-            </div>
-            <div className="bg-[#333333]/40 p-5 rounded-lg text-center">
-              <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                12<span>+</span>
-              </h3>
-              <p className="md:text-base text-xs">happy clients</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   );
