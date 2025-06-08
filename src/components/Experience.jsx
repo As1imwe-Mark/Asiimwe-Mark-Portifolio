@@ -1,53 +1,81 @@
-import { skills } from '././constants/skills';
+import { skills } from './constants/skills';
 import { Experiences } from './constants/Experience';
+
+// A reusable SkillCard component for better structure and styling
+const SkillCard = ({ icon, name }) => (
+  <div className="group flex flex-col items-center text-center p-4">
+    <div className="flex items-center justify-center w-24 h-24 rounded-full bg-gray-800 border-2 border-gray-700 group-hover:bg-indigo-600 group-hover:border-indigo-500 transition-all duration-300">
+      <img
+        src={icon}
+        alt={`${name} icon`}
+        className="w-1/2 h-1/2 object-contain transition-transform duration-300 group-hover:scale-110"
+      />
+    </div>
+    <p className="mt-4 text-sm font-medium text-gray-300 group-hover:text-white">
+      {name}
+    </p>
+  </div>
+);
+
+// A reusable ExperienceCard component for the timeline
+const ExperienceCard = ({ company, year, role, desc }) => (
+  <li className="mb-10 ms-6">
+    {/* The timeline dot */}
+    <span className="absolute flex items-center justify-center w-8 h-8 bg-gray-800 rounded-full -start-4 border-2 border-gray-700">
+      <svg className="w-4 h-4 text-indigo-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4Z M0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+      </svg>
+    </span>
+    <h3 className="flex items-center mb-1 text-xl font-semibold text-white">
+      {role}
+      {/* Optional: Add a 'Latest' badge for the most recent experience */}
+      {/* {isLatest && <span className="bg-indigo-500 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Latest</span>} */}
+    </h3>
+    <p className="block mb-2 text-sm font-normal leading-none text-indigo-400">{company} • {year}</p>
+    <p className="mb-4 text-base font-normal text-gray-400">{desc}</p>
+  </li>
+);
+
 
 const Experience = () => {
   return (
-    <div id="skills-experience" className="py-10 bg-[#232325]">
-      <h1 className="mb-8 text-3xl text-white text-center">
-        Skills & <span>Experiences</span>
-      </h1>
+    <section id="skills-experience" className="py-20 bg-[#232325]">
+      <div className="container mx-auto px-6 md:px-10">
+        <h2 className="mb-16 text-4xl font-bold text-white text-center relative inline-block left-1/2 -translate-x-1/2">
+          Skills & Experience
+          <span className="block w-1/2 h-1 bg-indigo-500 mt-2 mx-auto"></span>
+        </h2>
 
-      <div className="flex flex-wrap lg:flex-nowrap justify-between items-start lg:space-x-12 mx-auto max-w-7xl px-4">
-        
-        {/* Skills Section */}
-        <div className="w-full lg:w-1/2">
-          <div className="grid grid-cols-3 justify-center lg:justify-start items-start">
-            {skills.map((skill) => (
-              <div
-                className="m-4 flex flex-col items-center"
-                key={skill.name}
-              >
-                <div
-                  className="flex items-center justify-center w-20 h-20 md:w-16 md:h-16 rounded-full bg-slate-100"
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-8">
           
-                >
-                  <img
-                    src={skill.icon}
-                    alt={skill.name}
-                    className="w-1/2 h-1/2"
-                  />
-                </div>
-                <p className="mt-2 text-sm font-medium text-white">
-                  {skill.name}
-                </p>
-              </div>
-            ))}
+          {/* Skills Section */}
+          <div className="w-full">
+            <h3 className="text-2xl font-semibold text-center text-white mb-8">My Skillset</h3>
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+              {skills.map((skill) => (
+                <SkillCard key={skill.name} icon={skill.icon} name={skill.name} />
+              ))}
+            </div>
+          </div>
+
+          {/* Experience Timeline Section */}
+          <div className="w-full">
+             <h3 className="text-2xl font-semibold text-center text-white mb-8">Career Journey</h3>
+            <ol className="relative border-s border-gray-700">
+              {Experiences.map((experience) => (
+                <ExperienceCard
+                  key={experience.year}
+                  role={experience.role} // Assuming you add 'role' to your constants
+                  company={experience.company}
+                  year={experience.year}
+                  desc={experience.desc}
+                />
+              ))}
+            </ol>
           </div>
         </div>
-
-        {/* Experience Section */}
-        <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
-          {
-            Experiences.map((experience)=> <div key={experience.year} className="mb-[20px] text-white relative bg-gray-700/20 p-4 rounded-3xl max-w-[300px] sm:max-w-[600px] mx-auto lg:mx-0">
-            <p>{experience.company}</p>
-            <p className="text-gray-400">{experience.year}</p>
-            <p className="text-gray-500">{experience.desc}</p>
-          </div>)
-          }
-        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
