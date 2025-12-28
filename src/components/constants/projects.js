@@ -11,7 +11,7 @@ import movie from '../../assets/movie.png'
 import asma from '../../assets/asma_blog.png'
 
 export const projects = [
-  { img: asma-blog, title: "asma-blog", desc: "Developed and deployed a full-stack blog platform enabling user sign-up/login, content creation and management, search functionality, and profile updates I used React, TailwindCss, Express, MongoDB,AWT", github:"https://github.com/As1imwe-Mark/asma-blog",live:"https://asma-blog.onrender.com/" },
+  { img: asma, title: "asma-blog", desc: "Developed and deployed a full-stack blog platform enabling user sign-up/login, content creation and management, search functionality, and profile updates I used React, TailwindCss, Express, MongoDB,AWT", github:"https://github.com/As1imwe-Mark/asma-blog",live:"https://asma-blog.onrender.com/" },
   { img: linkwarden, title: "LinkWarden", desc: "It is a desktop project I designed for practice from a figma design sent to me by my friend on X. I used React and TailwindCss", github:"https://github.com/As1imwe-Mark/test-app",live:"https://linkwardenapp.netlify.app/" },
   { img: livingSeed , title: "Living Seed Academy", desc: "It is a website I designed for Living Seed Academy School, I used React, TailwindCss and Sanity as backend", github:"https://github.com/As1imwe-Mark/Living_Seed-Academy",live:"https://livingseedacademy.netlify.app" },
   { img: graphics, title: "Graphics Landing Page", desc: "It is a desktop project I designed for practice from a figma design sent to me by my friend on X. I used React and TailwindCss", github:"https://github.com/As1imwe-Mark/Graphics-Ltd",live:"https://graphicsltd.netlify.app/"  },
