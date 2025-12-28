@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const typeSequence = [
     "Frontend Dev", 1000,
-    "Webdesigner", 1000,
+    "Web Designer", 1000,
     "Data Entrant", 1000,
     "Maths Tutor", 1000,
 ];
@@ -37,7 +37,7 @@ const Hero = () => {
       {/* Left Column: Text Content */}
       <div className='flex flex-col my-auto mx-auto text-center sm:text-left'>
         <p className='md:text-5xl sm:text-4xl text-lg font-bold text-gray-200'>
-          Hi, I&apos;m Asiimwe Mark
+          Hi, I'm Asiimwe Mark
         </p>
 
         <h1 className='md:text-7xl sm:text-5xl text-3xl font-bold md:py-6'>
@@ -62,7 +62,7 @@ const Hero = () => {
                     key={index}
                     href={link.href}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     aria-label={link.ariaLabel}
                     className='rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-600 focus:ring-offset-gray-900'
                 >
@@ -82,13 +82,9 @@ const Hero = () => {
             aria-hidden="true"
           ></div>
           <a
-            href='/resume.pdf' // Best practice: place resume in the 'public' folder
-            download='Asiimwe-Mark-Resume.pdf'
-            className='
-              w-[190px] h-[60px] relative inline-flex items-center justify-center
-              px-8 py-4 text-lg font-bold text-white transition-all duration-200
-              bg-primary-color rounded-xl
-              focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900'
+            href='/My Resume 2025.pdf'
+            download='My Resume 2025.pdf'
+            className='w-[190px] h-[60px] relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-color rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900'
           >
             Download CV
           </a>
